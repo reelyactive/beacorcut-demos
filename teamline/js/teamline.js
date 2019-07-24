@@ -75,16 +75,24 @@ function handleYearSelection(event) {
 
 // Update the cards to display based on the given story URLs
 function updateCards(storyUrls) {
+  let updatedCards = document.createDocumentFragment();
+  let storiesToRetrieve = storyUrls.length;
+  let storiesRetrieved = 0;
+
   while(cards.firstChild) {
     cards.removeChild(cards.firstChild);
   }
 
   storyUrls.forEach(function(storyUrl) {
     cormorant.retrieveStory(storyUrl, function(story) {
+      let isRetrievalComplete = (++storiesRetrieved === storiesToRetrieve);
       let div = document.createElement('div');
       div.setAttribute('class', 'card bg-light');
-      cards.appendChild(div);
+      updatedCards.appendChild(div);
       cuttlefish.render(story, div);
+      if(isRetrievalComplete) {
+        cards.appendChild(updatedCards);
+      } 
     });
   });
 }
