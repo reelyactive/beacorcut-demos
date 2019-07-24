@@ -113,10 +113,45 @@
       <p> &nbsp; </p>
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-12 col-lg-10 col-xl-8">
-          <div class="card-deck">
-            <div class="card bg-light" id="jeffrey"></div>
-            <div class="card bg-light" id="traian"></div>
-            <div class="card bg-light" id="pierolivier"></div>
+          <!-- Year Selector -->
+          <nav aria-label="Year selector">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" tabindex="-1"
+                   aria-disabled="true"> <i class="fas fa-backward"></i> </a>
+              </li>
+              <li class="page-item year" id="2012">
+                <a class="page-link"> 2012 </a>
+              </li>
+              <li class="page-item year" id="2013">
+                <a class="page-link"> 2013 </a>
+              </li>
+              <li class="page-item year" id="2014">
+                <a class="page-link"> 2014 </a>
+              </li>
+              <li class="page-item year" id="2015">
+                <a class="page-link"> 2015 </a>
+              </li>
+              <li class="page-item year" id="2016">
+                <a class="page-link"> 2016 </a>
+              </li>
+              <li class="page-item year" id="2017">
+                <a class="page-link"> 2017 </a>
+              </li>
+              <li class="page-item year" id="2018">
+                <a class="page-link"> 2018 </a>
+              </li>
+              <li class="page-item year active" id="2019">
+                <a class="page-link"> 2019 </a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link" tabindex="-1"
+                   aria-disabled="true"> <i class="fas fa-forward"></i> </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Card Deck -->
+          <div class="card-deck" id="cards">
           </div>
         </div>
       </div>
@@ -131,7 +166,6 @@
     <script defer src="../common/js/fontawesome.min.js"></script>
     <script src="../common/js/jquery-3.4.0.min.js"></script>
     <script src="../common/js/bootstrap.bundle.min.js"></script>
-    <script src="../common/js/socket.io.slim.js"></script>
     <script src="../common/js/beaver.js"></script>
     <script src="../common/js/cormorant.js"></script>
     <script src="../common/js/cuttlefish.js"></script>

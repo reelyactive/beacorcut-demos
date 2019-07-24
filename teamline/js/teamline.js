@@ -5,26 +5,92 @@
 
 
 // Constant definitions
-const JEFFREY_URL = 'https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/';
-const TRAIAN_URL = 'https://reelyactive.github.io/beacorcut-demos/stories/traian/';
-const PIEROLIVIER_URL = 'https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/';
-
+const EARLIEST_YEAR = '2012';
+const LATEST_YEAR = '2019';
+const STORIES_BY_YEAR = {
+    "2012": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/"
+    ],
+    "2013": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/"
+    ],
+    "2014": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/"
+    ],
+    "2015": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/"
+    ],
+    "2016": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/"
+    ],
+    "2017": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/"
+    ],
+    "2018": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/"
+    ],
+    "2019": [
+      "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/"
+    ]
+};
 
 
 // DOM elements
-let jeffrey = document.querySelector('#jeffrey');
-let traian = document.querySelector('#traian');
-let pierolivier = document.querySelector('#pierolivier');
+let years = document.querySelectorAll('.year');
+let cards = document.querySelector('#cards');
 
-cormorant.retrieveStory(JEFFREY_URL, function(story) {
-  cuttlefish.render(story, jeffrey);
+
+// Update the year
+function handleYearSelection(event) {
+  let selectedYear = this;  // currentTarget of event
+  let selectedYearId = selectedYear.getAttribute('id');
+
+  years.forEach(function(year) {
+    year.setAttribute('class', 'page-item year');
+  });
+  selectedYear.setAttribute('class', 'page-item year active');
+
+  let selectedYearStoryUrls = STORIES_BY_YEAR[selectedYearId];
+  updateCards(selectedYearStoryUrls);
+}
+
+
+// Update the cards to display based on the given story URLs
+function updateCards(storyUrls) {
+  while(cards.firstChild) {
+    cards.removeChild(cards.firstChild);
+  }
+
+  storyUrls.forEach(function(storyUrl) {
+    cormorant.retrieveStory(storyUrl, function(story) {
+      let div = document.createElement('div');
+      div.setAttribute('class', 'card bg-light');
+      cards.appendChild(div);
+      cuttlefish.render(story, div);
+    });
+  });
+}
+
+
+// Observe year selection clicks
+years.forEach(function(year) {
+  year.addEventListener('click', handleYearSelection);
 });
 
-cormorant.retrieveStory(TRAIAN_URL, function(story) {
-  cuttlefish.render(story, traian);
-});
 
-cormorant.retrieveStory(PIEROLIVIER_URL, function(story) {
-  cuttlefish.render(story, pierolivier);
-});
-
+// On page load, select the latest year
+updateCards(STORIES_BY_YEAR[LATEST_YEAR]);
