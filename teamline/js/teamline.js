@@ -25,10 +25,12 @@ const STORIES_BY_YEAR = {
     ],
     "2015": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
       "https://reelyactive.github.io/beacorcut-demos/stories/benoit/"
     ],
     "2016": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
       "https://reelyactive.github.io/beacorcut-demos/stories/benoit/"
     ],
     "2017": [
@@ -44,7 +46,9 @@ const STORIES_BY_YEAR = {
     "2019": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
       "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
-      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/"
+      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/camille/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/furaha/"
     ]
 };
 
