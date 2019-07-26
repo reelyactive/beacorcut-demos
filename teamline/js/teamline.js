@@ -16,37 +16,62 @@ const STORIES_BY_YEAR = {
     "2013": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
       "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
-      "https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/"
+      "https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/shauheen/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/cyril/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/shant/"
     ],
     "2014": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
       "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
-      "https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/"
+      "https://reelyactive.github.io/beacorcut-demos/stories/pierolivier/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/imran/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/vaughn/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/tim/"
     ],
     "2015": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
       "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
-      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/"
+      "https://reelyactive.github.io/beacorcut-demos/stories/juan/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/george/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/imran/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/nicolas/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/imranj/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/ibrahim/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/marwan/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/tingli/"
     ],
     "2016": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
       "https://reelyactive.github.io/beacorcut-demos/stories/traian/",
-      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/"
+      "https://reelyactive.github.io/beacorcut-demos/stories/juan/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/marwan/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/imran/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/tingli/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/vincent/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/brian/"
     ],
     "2017": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/juan/",
       "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
-      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/"
+      "https://reelyactive.github.io/beacorcut-demos/stories/brian/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/imran/"
     ],
     "2018": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
       "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
-      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/"
+      "https://reelyactive.github.io/beacorcut-demos/stories/philippe/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/imran/"
     ],
     "2019": [
       "https://reelyactive.github.io/beacorcut-demos/stories/jeffrey/",
       "https://reelyactive.github.io/beacorcut-demos/stories/benoit/",
       "https://reelyactive.github.io/beacorcut-demos/stories/philippe/",
+      "https://reelyactive.github.io/beacorcut-demos/stories/imran/",
       "https://reelyactive.github.io/beacorcut-demos/stories/camille/",
       "https://reelyactive.github.io/beacorcut-demos/stories/furaha/"
     ]
